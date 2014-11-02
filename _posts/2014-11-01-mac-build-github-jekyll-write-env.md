@@ -2,12 +2,10 @@
 layout: post
 title: "Mac下搭建github+jekyll写作环境"
 description: ""
-category: 
-tags: []
+category: get 
+tags: [github,jekyll]
 ---
 {% include JB/setup %}
-
-# Mac下搭建github＋jekyll写作环境
 
 ## 升级Command Line
 It seems like you have to install the Xcode Command Line Tools first (run xcode-select --install in your terminal).
@@ -34,12 +32,19 @@ $ jekyll serve
 ```
 
 ## 替换jquery链接
+下载一个jquery压缩版放入/assets/javascript/jquery-1.11.1.min.js
+
+然后将_includes/themes/bootstrap-3/default.html中的
+
 ```
 https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
+```
+
 替换为：
+
+```
 /assets/javascript/jquery-1.11.1.min.js
 ```
-> grep -rl "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" *|xargs -0 sed -i 's/https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.10.2\/jquery.min.js/\/assets\/javascript\/jquery-1.11.1.min.js/g' "{}"
 
 ## 调整首页
 //TODO
