@@ -11,6 +11,7 @@ tags: [github,jekyll]
 
 ## 升级Command Line
 由于刚升级了"优圣美地"，需要安装一下Command Line Tools，安装jekyll需要。
+
 ```
 $ xcode-select --install
 ```
@@ -43,10 +44,13 @@ $ jekyll serve
 下载一个jquery压缩版放入/assets/javascript/jquery-1.11.1.min.js
 
 然后将_includes/themes/bootstrap-3/default.html中的
+
 ```
 https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
 ```
+
 替换为：
+
 ```
 /assets/javascript/jquery-1.11.1.min.js
 ```
@@ -54,9 +58,11 @@ https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
 
 ## 中文支持
 将jekyll默认的markdown解析引擎maruku 更换为RDiscount
+
 ```
 sudo gem install rdiscount
 ```
+
 然后在_config.yml中```highlighter: pygments```之后加一行```markdown: rdiscount```,这样再次生成网站的时候就使用RDiscount来解析md文件了。
 
 ## 个性化域名
@@ -66,6 +72,7 @@ USERNAME.github.io文件夹下新建一个CNAME文件，里面的内容就是你
 
 ## 安装&更换theme
 安装一个jekyll模板，然后使用它来变更blog界面。
+
 ```
 rake theme:install git="https://github.com/jekyllbootstrap/theme-the-program.git"
 rake theme:switch name="the-program"
@@ -75,7 +82,9 @@ rake theme:switch name="the-program"
 页面可以适当做一些调整，比如菜单名称等等。
 
 ## 开始写作...
+
 ```
 rake post title="Hello World"
 ```
+
 使用jekyll命令行创建文章，然后去_post目录下用markdown编辑器或vim编辑文章。
