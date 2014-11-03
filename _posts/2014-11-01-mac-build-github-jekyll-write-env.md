@@ -10,7 +10,7 @@ tags: [github,jekyll]
 > 之前有在公共博客或是专业的技术博客上写写文章、笔记。后来由于从事安全相关行业，转而把一些工作中的总结、笔记记录在了OneNote上，纯离线不对外开放。但这种转换导致文章产出率很低，常常半年写不了一篇文章。为了能够督促自己将技术或是生活点滴记录下来，寻找一种使用Markdown语法，干净整洁的写作环境：github+jekyll，这正是我想要的。
 
 ## 升级Command Line
-由于刚升级了10.10，需要安装一下Command Line Tools，安装jekyll需要。
+由于刚升级了"优圣美地"，需要安装一下Command Line Tools，安装jekyll需要。
 ```
 $ xcode-select --install
 ```
