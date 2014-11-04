@@ -5,11 +5,7 @@ tagline: di 技术博客 -- 看看书 & 读读码 & 爱妻/子 & 思人生
 ---
 {% include JB/setup %}
 
-<style>
-ul { list-style-type:none; }
-</style>
-
-<ul class="posts">
+<ul class="posts" style="list-style-type:none;">
   {% for post in site.posts %}
     <li><span>{{ post.date | date:"%Y-%m-%d" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
