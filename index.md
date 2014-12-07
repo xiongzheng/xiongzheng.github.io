@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 有熊出没请躺下
-tagline: di 技术博客 -- 看看书 & 读读码 & 爱妻/子 & 思人生
+tagline: di 技术博客 -- 看看书 & 读读码 & 爱妻/子 & 思人生.
 ---
 {% include JB/setup %}
 
