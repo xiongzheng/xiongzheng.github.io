@@ -71,7 +71,7 @@ sudo gem install rdiscount
 ## 个性化域名
 USERNAME.github.io文件夹下新建一个CNAME文件，里面的内容就是你的域名，比如USERNAME.me
 
-然后按照GitHub所说将你的域名指向204.232.175.78这个ip，这样当再次访问你的域名的时候，就会指向GitHub Pages了（可能DNS更新会需要一段时间）。
+然后按照GitHub所说将你的域名指向204.232.175.78这个ip(最新地址：192.30.252.153、192.30.252.154)，这样当再次访问你的域名的时候，就会指向GitHub Pages了（可能DNS更新会需要一段时间）。
 
 ## 安装&更换theme
 安装一个jekyll模板，然后使用它来变更blog界面。

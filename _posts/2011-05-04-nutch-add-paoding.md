@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-### Nutch添加中文分词器
+
 
 #### 0.准备工作,JDK6+,安装ant1.7.1+,安装javacc
 
