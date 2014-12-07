@@ -97,7 +97,7 @@ Query: 人逢喜事精神爽
 
 这里nutch还是用了一元分词，继续下一步。
  
-4.修正nutch先使用一元分词，然后才将结果传递给分词器问题。
+#### 4.修正nutch先使用一元分词，然后才将结果传递给分词器问题。
 
 ```
 cd /usr/local/nutch-1.0/src/java/org/apache/nutch/analysis
