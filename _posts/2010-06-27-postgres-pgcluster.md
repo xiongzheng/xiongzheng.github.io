@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "pgcluster 配置"
+title: "postgres pgcluster 配置"
 description: ""
 category: get
 tags: []
