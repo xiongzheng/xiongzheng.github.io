@@ -14,7 +14,8 @@ tags: []
 ```
 tar -xzvf hbase-0.92.1.tar.gz
 ```
-
+   
+   
 
 ##### 2.配置参数
 修改hbase-site.xml：
