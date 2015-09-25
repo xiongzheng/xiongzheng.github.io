@@ -27,7 +27,7 @@ tar -xzvf hbase-0.92.1.tar.gz
         </property>  
 </configuration>
 ```
-
+　
 
 ##### 3.配置/etc/hosts , 将127.0.0.1改为本地ip
 
@@ -35,14 +35,14 @@ tar -xzvf hbase-0.92.1.tar.gz
 10.17.12.95	localhost
 10.17.12.95	xiongzheng-Lenovo
 ```
-
+　
 
 ##### 4.启动HBase
 
 ```
 bin/start-hbase.sh
 ```
-
+　
 
 ##### 5.简单操作
 
@@ -106,7 +106,7 @@ scan 'user_info',{COLUMNS => 'v'}
 disable 'user_info'
 drop 'user_info'
 ```
-
+　
 
 #### 二.伪分布式运行模式
 
@@ -115,7 +115,7 @@ drop 'user_info'
 ```
 tar -xzvf hbase-0.92.1.tar.gz
 ```
-
+　
 
 ##### 2.配置参数
 编辑hbase-0.92.1/conf/hbase-env.sh，添加环境变量
@@ -145,6 +145,7 @@ export HBASE_CLASSPATH=~/Hadoop-1.0.3/conf  
 
 
 注意：hbase.rootdir的value中，hdfs://localhost:9000是Hadoop配置文件core-site.xml中fs.default.name的值。
+　
 
 ##### 3.先启动Hadoop，启动HBase
 
