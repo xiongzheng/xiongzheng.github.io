@@ -143,8 +143,8 @@ export HBASE_CLASSPATH=~/Hadoop-1.0.3/conf  
 	</configuration>  
 ```
 
-
 注意：hbase.rootdir的value中，hdfs://localhost:9000是Hadoop配置文件core-site.xml中fs.default.name的值。
+
 　
 
 ##### 3.先启动Hadoop，启动HBase
