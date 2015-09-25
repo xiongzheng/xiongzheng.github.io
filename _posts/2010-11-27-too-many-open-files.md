@@ -17,6 +17,7 @@ tags: []
 
 在linux系统中增大文件描述符的方法：
 修改/etc/security/limits.conf，在文件末加上
+
 ```
 * - nofile 2048 #具体可google一下。
 ```
