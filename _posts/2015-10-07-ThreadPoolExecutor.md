@@ -38,6 +38,7 @@ B.线程池线程如果大于等于corePoolSize，则放入缓冲队列，缓冲
 > g.largestPoolSize，该变量记录了线程池在整个生命周期中曾经出现的最大线程个数。
 > 
 > h.线程池创建之后，可以调用setCorePoolSize()改变运行的核心线程数，调用setMaximumPoolSize()改变运行的最大线程数。
+　
 
 #### 参数
 
@@ -61,6 +62,7 @@ Executors.defaultThreadFactory(), new AbortPolicy())
 ```
 
 > 注意：这里LinkedBlockingQueue要设置容量，如果不设置容量则为无界队列。当高并发、任务执行时间过长时，可能引起内存溢出。
+　
 
 #### 队列
 阻塞队列用于对线程池任务进行缓冲，平衡生产端和消费端处理速度。
@@ -74,8 +76,7 @@ ArrayBlockingQueue		有界队列，数组实现；在生产者放入数据和消
 LinkedBlockingQueue 	无界队列，链表实现，设置容量使之有界；因为其对于生产者端和消费者端分别采用了独立的锁来控制数据同步，这也意味着在高并发的情况下生产者和消费者可以并行地操作队列中的数据，以此来提高整个队列的并发性能。
 
 PriorityBlockingQueue	优先级队列；可定义任务优先级别，按照优先级别排队。
-
-
+　
 
 #### 拒绝策略
 ThreadPoolExecutor中包含四种处理策略，也可自行继承RejectedExecutionHandler扩展：
@@ -87,8 +88,7 @@ AbortPolicy：处理程序遭到拒绝将抛出运行时RejectedExecutionExcepti
 DiscardPolicy：被拒绝的任务直接被丢弃。
 
 DiscardOldestPolicy：如果执行程序尚未关闭，则位于工作队列头部的任务将被删除，然后重试执行程序（如果再次失败，则重复此过程）。
-
-
+　
 
 #### 附录：测试用例
 
