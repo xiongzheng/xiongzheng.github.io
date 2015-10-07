@@ -97,7 +97,8 @@ public class ThreadPoolExecutorTest {
 				new LinkedBlockingQueue<Runnable>(2), Executors.defaultThreadFactory(), new AbortPolicy());
 		pInfo(threadPool);
 		/**
-		 * CorePoolSize:2 MaximumPoolSize:4 PoolSize:0 QueueSize:0 初始时没有创建线程。
+		 * CorePoolSize:2 MaximumPoolSize:4 PoolSize:0 QueueSize:0 
+		 * 初始时没有创建线程。
 		 */
 
 		threadPool.execute(new Task());
