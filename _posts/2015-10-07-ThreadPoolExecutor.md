@@ -72,7 +72,6 @@ AbortPolicy：处理程序遭到拒绝将抛出运行时RejectedExecutionExcepti
 DiscardPolicy：被拒绝的任务直接被丢弃。
 DiscardOldestPolicy：如果执行程序尚未关闭，则位于工作队列头部的任务将被删除，然后重试执行程序（如果再次失败，则重复此过程）。
 
-> 点击下面的「原文链接」可以继续阅读测试用例。
 
 ##### 附录：测试用例
 
