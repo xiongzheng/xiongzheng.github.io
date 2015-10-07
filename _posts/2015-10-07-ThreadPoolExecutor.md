@@ -66,18 +66,28 @@ Executors.defaultThreadFactory(), new AbortPolicy())
 阻塞队列用于对线程池任务进行缓冲，平衡生产端和消费端处理速度。
 
 JDK自带的队列有：
+
 SynchronousQueue 		同步阻塞队列；在某次添加元素后必须等待其他线程取走后才能继续添加。
+
 ArrayBlockingQueue		有界队列，数组实现；在生产者放入数据和消费者获取数据，都是共用同一个锁对象，由此也意味着两者无法真正并行运行。
+
 LinkedBlockingQueue 	无界队列，链表实现，设置容量使之有界；因为其对于生产者端和消费者端分别采用了独立的锁来控制数据同步，这也意味着在高并发的情况下生产者和消费者可以并行地操作队列中的数据，以此来提高整个队列的并发性能。
+
 PriorityBlockingQueue	优先级队列；可定义任务优先级别，按照优先级别排队。
+
 
 
 #### 拒绝策略
 ThreadPoolExecutor中包含四种处理策略，也可自行继承RejectedExecutionHandler扩展：
+
 CallerRunsPolicy：被拒绝的任务直接交由生产者本身执行。此策略提供简单的反馈控制机制，能够减缓新任务的提交速度。
+
 AbortPolicy：处理程序遭到拒绝将抛出运行时RejectedExecutionException。
+
 DiscardPolicy：被拒绝的任务直接被丢弃。
+
 DiscardOldestPolicy：如果执行程序尚未关闭，则位于工作队列头部的任务将被删除，然后重试执行程序（如果再次失败，则重复此过程）。
+
 
 
 #### 附录：测试用例
