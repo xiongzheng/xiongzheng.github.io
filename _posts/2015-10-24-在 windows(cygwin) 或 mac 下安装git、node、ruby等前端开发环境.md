@@ -1,4 +1,12 @@
-## 在 windows(cygwin) 或 mac 下安装git、node、ruby等前端开发环境
+---
+layout: post
+title: "在 windows(cygwin) 或 mac 下安装git、node、ruby等前端开发环境"
+description: ""
+category: get
+tags: []
+---
+{% include JB/setup %}
+
 
 我记得每一年技术部年会都会由老大说出一个技术主题，之前有服务化、模块化、工具化、数据化等等等等，今年的主题是全栈。遥想当年，在供职过的两家公司什么抗机器、装机架；什么安装系统、加固、搭建Web或任务应用的前后端环境、打包发布、网络配置；什么JavaScript、CSS、VB、.NET、PHP、JAVA等等语言；什么Mootools、JQuery、Ext、Lucene、Solr、Hibernate、Spring；什么Oracle、Mysql、SQLServer、MongoDB、PL/SQL -- 我都耍的有模有样。然后加入阿里，在感叹分工明确、精益求精之余在专业上深入挖掘，再然后要全栈了，不免有些五味杂陈，当然之前也谈不上全栈，我理解的全栈不是Java写的比前端好，CSS写的比后端好，而是各个方面都比较深入，且能快速学习新的理论与技术。提到搞全栈，不由得想到两个正负能量的词："剩余价值"、"终身学习"，于我，后者想的多一点。
 
