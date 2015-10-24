@@ -167,7 +167,7 @@ gem install compass
 
 
 ### 开始写代码
-以一个简单的PC工程为例，H5需要kimi环境参见这里：http://www.atatech.org/articles/40818
+以一个简单的前端工程为例。
 
 1. clone
 
